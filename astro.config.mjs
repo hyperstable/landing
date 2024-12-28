@@ -9,6 +9,6 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  site: "https://hyperstable.github.io",
-  base: "/landing",
+  site: "https://www.hyperstable.xyz",
+  base: "/",
 });
