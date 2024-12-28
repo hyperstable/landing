@@ -5,17 +5,21 @@ import gitbooks from "../assets/gitbooks.svg";
 import github from "../assets/github.svg";
 
 const socials = [
-    { icon: github, href: "#", alt: "Github" },
-    { icon: gitbooks, href: "#", alt: "Gitbooks" },
-    { icon: twitter, href: "#", alt: "X" },
-    { icon: discord, href: "#", alt: "Discord" },
+  { icon: github, href: "https://github.com/hyperstable", alt: "Github" },
+  {
+    icon: gitbooks,
+    href: "https://hyperstable.gitbook.io/docs",
+    alt: "Gitbooks",
+  },
+  { icon: twitter, href: "https://x.com/HyperstableX", alt: "X" },
+  { icon: discord, href: "#", alt: "Discord" },
 ];
 ---
 
 {
-    socials.map((social) => (
-        <a href={social.href}>
-            <img class="h-4" src={social.icon.src} alt={social.alt} />
-        </a>
-    ))
+  socials.map((social) => (
+    <a href={social.href}>
+      <img class="h-4" src={social.icon.src} alt={social.alt} />
+    </a>
+  ))
 }
