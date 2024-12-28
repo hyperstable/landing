@@ -10,4 +10,5 @@ export default defineConfig({
     enabled: false,
   },
   site: "https://hyperstable.github.io",
+  base: "/landing",
 });
