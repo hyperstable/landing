@@ -1,0 +1,21 @@
+---
+import twitter from "../assets/twitter.svg";
+import discord from "../assets/discord.svg";
+import gitbooks from "../assets/gitbooks.svg";
+import github from "../assets/github.svg";
+
+const socials = [
+    { icon: github, href: "#", alt: "Github" },
+    { icon: gitbooks, href: "#", alt: "Gitbooks" },
+    { icon: twitter, href: "#", alt: "X" },
+    { icon: discord, href: "#", alt: "Discord" },
+];
+---
+
+{
+    socials.map((social) => (
+        <a href={social.href}>
+            <img class="h-4" src={social.icon.src} alt={social.alt} />
+        </a>
+    ))
+}

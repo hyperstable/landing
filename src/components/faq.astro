@@ -1,0 +1,115 @@
+---
+const faqs = [
+    {
+        title: "What's the best thing about Switzerland?",
+        content:
+            "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        title: "Lorem ipsum dolor sit amet?",
+        content:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        title: "Lorem ipsum dolor sit amet?",
+        content:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+];
+---
+
+<script>
+    function toggle(button) {
+        const icon = button.querySelector("svg");
+        const content = button.parentNode.nextElementSibling;
+
+        if (button.getAttribute("aria-expanded") === "true") {
+            button.setAttribute("aria-expanded", "false");
+            icon.classList.remove("hidden");
+            icon.nextElementSibling.classList.add("hidden");
+            content.style.display = "none";
+        } else {
+            button.setAttribute("aria-expanded", "true");
+            icon.classList.add("hidden");
+            icon.nextElementSibling.classList.remove("hidden");
+            content.style.display = "block";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".toggle-button");
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                toggle(button);
+            });
+        });
+    });
+
+    // toggle first faq item
+    document.addEventListener("DOMContentLoaded", function () {
+        const button = document.querySelector(".toggle-button");
+        toggle(button);
+    });
+</script>
+
+<div class="mx-auto max-w-4xl divide-y divide-white/10 px-2">
+    <dl class="mt-10 space-y-4 divide-y divide-white/10">
+        {
+            faqs.map((faq, index) => (
+                <div
+                    id={`faq-${index}`}
+                    class="bg-hs-box-bg rounded-lg overflow-hidden"
+                >
+                    <dt class="bg-hs-box-title p-4">
+                        <button
+                            type="button"
+                            class="toggle-button flex w-full items-start justify-between text-left text-white"
+                            aria-controls="faq-0"
+                            aria-expanded="false"
+                        >
+                            <span class="text-xl font-semibold text-[#BDE4EB]">
+                                {faq.title}
+                            </span>
+                            <span class="ml-6 flex h-7 items-center">
+                                <svg
+                                    class="size-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    data-slot="icon"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 6v12m6-6H6"
+                                    />
+                                </svg>
+                                <svg
+                                    class="hidden size-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    data-slot="icon"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M18 12H6"
+                                    />
+                                </svg>
+                            </span>
+                        </button>
+                    </dt>
+                    <dd class="p-4 hidden mt-2 pr-12" id="faq-0">
+                        <p class="text-base/7 text-[#BDE4EB]">{faq.content}</p>
+                    </dd>
+                </div>
+            ))
+        }
+    </dl>
+</div>
