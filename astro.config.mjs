@@ -8,5 +8,6 @@ export default defineConfig({
   integrations: [tailwind()],
   devToolbar: {
     enabled: false
-  }
+  },
+  site: "https://hyperstable.github.io"
 });
