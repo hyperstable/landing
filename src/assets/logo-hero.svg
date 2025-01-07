@@ -1,36 +1,56 @@
-<svg width="322" height="324" viewBox="0 0 322 324" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M317.416 94.2853L250.718 175.463V62.7691L317.416 94.2853Z" fill="#1E4D81"/>
-<path d="M250.718 62.7691V175.463L131.584 4.60318L250.718 62.7691Z" fill="#216CA7"/>
-<path d="M250.718 175.463L317.628 183.065L318.006 272.083L250.718 175.463Z" fill="#1E4D81"/>
-<path d="M250.718 175.463L317.416 94.2853L317.628 183.065L250.718 175.463Z" fill="#1E3058"/>
-<path d="M250.718 175.463L318.006 272.083L250.718 288.807V175.463Z" fill="#1E3058"/>
-<path d="M250.718 175.463V288.807L131.631 319.739L250.718 175.463Z" fill="#4F9AC6"/>
-<path d="M131.631 319.739L250.718 175.463L131.392 161.945L131.631 319.739Z" fill="#216CA7"/>
-<path d="M131.392 161.945L131.584 4.60318L250.718 175.463L131.392 161.945Z" fill="#4F9AC6"/>
-<path d="M131.584 4.60318L50.0752 175.476L131.392 161.945L131.584 4.60318Z" fill="#90CDE3"/>
-<path d="M50.0752 175.476L131.631 319.739L131.392 161.945L50.0752 175.476Z" fill="#4F9AC6"/>
-<path d="M50.0749 175.476L48.4683 288.807L131.631 319.739L50.0749 175.476Z" fill="#1E4D81"/>
-<path d="M50.0753 175.476L48.4686 288.807L3.99268 272.083L50.0753 175.476Z" fill="#4F9AC6"/>
-<path d="M3.99268 272.083L50.0753 175.476L4.09226 182.62L3.99268 272.083Z" fill="#90CDE3"/>
-<path d="M4.09207 182.62L3.98584 93.9534L50.0751 175.476L4.09207 182.62Z" fill="#BDE4EB"/>
-<path d="M3.98584 93.9534L50.0751 175.476L48.4684 62.7691L3.98584 93.9534Z" fill="#90CDE3"/>
-<path d="M48.4683 62.7691L50.0749 175.476L131.584 4.60318L48.4683 62.7691Z" fill="#BDE4EB"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M130.661 0L321.391 91.7775L322 275.173L131.408 323.908L0.00603942 274.846L0.108709 182.624L0.108708 182.615L0 91.8866L130.661 0ZM131.419 9.20641L7.97198 96.0201L8.07574 182.624L7.97922 269.319L131.854 315.57L314.012 268.992L313.44 96.7932L131.419 9.20641Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M127.647 319.886L127.056 4.75008L135.023 4.73514L135.614 319.871L127.647 319.886Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M134.852 2.32547L321.274 269.805L314.738 274.36L128.316 6.8809L134.852 2.32547Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.396484 270.368L127.988 2.88815L135.179 6.31828L7.58729 273.798L0.396484 270.368Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M320.19 96.8451L134.413 322.299L128.264 317.232L314.042 91.7786L320.19 96.8451Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M128.276 321.892L0.631348 96.1063L7.56679 92.1855L135.212 317.971L128.276 321.892Z" fill="white"/>
-<path opacity="0.2" d="M319.938 273.45L135.242 312.562L225.057 52.5381L317.043 94.5509L319.938 273.45Z" fill="url(#paint0_linear_4030_4598)"/>
-<path opacity="0.2" d="M4.9884 276.292L133.822 317.488L55.818 58.9449L1.48291 95.7526L4.9884 276.292Z" fill="url(#paint1_linear_4030_4598)"/>
-<defs>
-<linearGradient id="paint0_linear_4030_4598" x1="210.019" y1="334.657" x2="298.752" y2="90.8529" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
-<linearGradient id="paint1_linear_4030_4598" x1="39.2532" y1="284.637" x2="110.751" y2="88.1972" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
-</defs>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 507.36 487.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_9-2);
+      }
+
+      .cls-1, .cls-2 {
+        opacity: .2;
+      }
+
+      .cls-3 {
+        fill: #1fb1f5;
+      }
+
+      .cls-4 {
+        fill: rgba(16, 47, 178, .74);
+        opacity: .4;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_9);
+      }
+
+      .cls-6 {
+        fill: #1c2d8e;
+        opacity: .5;
+      }
+
+      .cls-7 {
+        fill: #0093ff;
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_9" data-name="Unbenannter Verlauf 9" x1="326.85" y1="501.35" x2="460.51" y2="134.13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_9-2" data-name="Unbenannter Verlauf 9" x1="69.64" y1="426.01" x2="177.34" y2="130.13" xlink:href="#Unbenannter_Verlauf_9"/>
+  </defs>
+  <g id="_3D_Cube_orig" data-name="3D Cube orig">
+    <g>
+      <polygon class="cls-3" points="16.21 146.41 17.85 403.87 162.73 453.89 199.75 434.61 199.75 56.94 150.85 52.36 16.21 146.41"/>
+      <polygon class="cls-7" points="222.14 56.94 260.75 32.56 488.05 139.7 485.49 399.86 251.67 460.65 214.22 438.61 222.14 56.94"/>
+      <polygon class="cls-4" points="17.85 403.87 273.29 375.15 485.49 399.86 223.13 468.07 17.85 403.87"/>
+      <polygon class="cls-4" points="16.21 146.41 273.29 169.34 488.05 139.7 201.12 20.71 16.21 146.41"/>
+      <polygon class="cls-6" points="488.05 139.7 273.29 169.34 273.29 375.15 485.49 399.86 488.05 139.7"/>
+      <path class="cls-5" d="M164.97,16.04L16.23,120.47C6.06,127.61,0,139.26,0,151.7v239.92c0,16.27,10.32,30.75,25.7,36.06l158.07,54.58c15.81,5.46,32.84,6.32,49.12,2.48l245.08-57.78c17.23-4.06,29.4-19.44,29.4-37.14v-235.64c0-14.68-8.42-28.06-21.66-34.41L253.94,8.68c-28.81-13.81-62.82-10.99-88.97,7.36ZM49.45,135.02l87.48-61.42c21.4-15.02,50.85.28,50.85,26.43v308.14c0,20.89-20.59,35.56-40.33,28.74l-87.23-30.12c-17.49-6.04-29.22-22.5-29.22-41v-195.27c0-14.13,6.89-27.38,18.45-35.5ZM442.94,403.37l-159.83,37.68c-27.23,6.42-53.33-14.24-53.33-42.22V100.37c0-31.93,33.33-52.92,62.13-39.11l159.83,76.62c15.05,7.21,24.63,22.42,24.63,39.11v184.16c0,20.12-13.84,37.6-33.42,42.22Z"/>
+      <polygon class="cls-2" points="492.41 409.16 214.22 468.07 349.5 76.42 488.05 139.7 492.41 409.16"/>
+      <polygon class="cls-1" points="18.03 413.44 212.08 475.49 94.59 86.07 12.75 141.51 18.03 413.44"/>
+    </g>
+  </g>
 </svg>
