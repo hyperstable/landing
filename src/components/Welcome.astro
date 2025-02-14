@@ -30,6 +30,11 @@ const boxes = [
       "Vote on which pools earn PEG emissions, receive 100% of protocol revenue plus incentives for the pools they vote for.",
   },
 ];
+
+import kato from "../assets/kato.jpg";
+import weiss from "../assets/weiss.jpg";
+import ox52 from "../assets/52.jpg";
+import pashov from "../assets/pashov.jpg";
 ---
 
 <style>
@@ -349,9 +354,72 @@ const boxes = [
     </div>
   </section>
 
-  <div id="lock" class="mx-auto max-w-4xl pb-28">
+  <div id="faq" class="mx-auto max-w-4xl pb-28">
     <h2 class="text-center text-3xl">FAQ</h2>
 
     <FAQ />
+  </div>
+
+  <div id="security" class="mx-auto max-w-4xl pb-28">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl">Security</h2>
+      <p class="mt-4 text-lg text-gray-300">
+        Security is paramount when it comes to DeFi, so we work with the best
+        auditors in the space.
+      </p>
+    </div>
+
+    <div class="p-3 max-w-6xl mx-auto mt-12 grid gap-6 md:grid-cols-3">
+      <!-- 0x52 -->
+      <div
+        class="bg-hs-box-bg p-6 rounded-lg flex flex-col items-center text-center"
+      >
+        <img
+          src={ox52.src}
+          alt="0x52"
+          class="w-12 h-12 rounded-full border-2 border-gray-800"
+        />
+        <h3 class="mt-4 text-xl font-semibold">0x52</h3>
+        <p class="mt-2 text-white text-sm">Solo audit by 0x52 (Blackthorn).</p>
+      </div>
+
+      <!-- Pashov -->
+      <div
+        class="bg-hs-box-bg p-6 rounded-lg flex flex-col items-center text-center"
+      >
+        <img
+          src={pashov.src}
+          alt="Pashov Audit Group"
+          class="w-12 h-12 rounded-full border-2 border-gray-800"
+        />
+        <h3 class="mt-4 text-xl font-semibold">Pashov Audit Group</h3>
+        <p class="mt-2 text-white text-sm">
+          Pashov audit group is a world-class smart contract auditing company
+          that is trusted by top web3 projects.
+        </p>
+      </div>
+
+      <!-- 0xKato, 0xWeiss -->
+      <div
+        class="bg-hs-box-bg p-6 rounded-lg flex flex-col items-center text-center"
+      >
+        <div class="relative flex -space-x-2">
+          <img
+            src={kato.src}
+            alt="0xKato"
+            class="w-12 h-12 rounded-full border-2 border-gray-800"
+          />
+          <img
+            src={weiss.src}
+            alt="0xWeiss"
+            class="w-12 h-12 rounded-full border-2 border-gray-800"
+          />
+        </div>
+        <h3 class="mt-4 text-xl font-semibold">0xKato, 0xWeiss</h3>
+        <p class="mt-2 text-white text-sm">
+          Solo audit by 0xKato (ExpressoSys) and 0xWeiss (Spearbit).
+        </p>
+      </div>
+    </div>
   </div>
 </div>
