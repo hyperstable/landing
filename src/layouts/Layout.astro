@@ -5,189 +5,173 @@ import logo from "../assets/logo.svg";
 import Socials from "../components/socials.astro";
 
 const navItems = [
-    { name: "Mint", href: "#mint" },
-    { name: "Earn", href: "#earn" },
-    { name: "Lock", href: "#lock" },
+  { name: "Mint", href: "#mint" },
+  { name: "Earn", href: "#earn" },
+  { name: "Lock", href: "#lock" },
 ];
 ---
 
 <script>
-    const navToggle = document.getElementById("mobile-nav-toggle");
-    const mobileNav = document.getElementById("mobile-nav");
-    navToggle.addEventListener("click", () => {
-        mobileNav.classList.toggle("hidden");
+  const navToggle = document.getElementById("mobile-nav-toggle");
+  const mobileNav = document.getElementById("mobile-nav");
+  navToggle.addEventListener("click", () => {
+    mobileNav.classList.toggle("hidden");
+  });
+  const mobileNavItem = document.querySelectorAll(".mobile-nav-item");
+  mobileNavItem.forEach((item) => {
+    item.addEventListener("click", () => {
+      mobileNav.classList.add("hidden");
     });
-    const mobileNavItem = document.querySelectorAll(".mobile-nav-item");
-    mobileNavItem.forEach((item) => {
-        item.addEventListener("click", () => {
-            mobileNav.classList.add("hidden");
-        });
-    });
+  });
 </script>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Hyperstable</title>
-        <script src="../particles.js"></script>
-        <script src="../main.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Hyperstable</title>
+    <script src="../particles.js"></script>
+    <script src="../main.js"></script>
+  </head>
 
-    <body class="bg-black relative" style="z-index: 10">
-        <header class="text-white w-full">
-            <div
-                class="fixed w-full"
-                style="backdrop-filter: blur(10px); z-index: 100; background-color: rgba(0, 0, 0, 0.7);"
+  <body class="bg-black relative" style="z-index: 10">
+    <header class="text-white w-full">
+      <div
+        class="fixed w-full"
+        style="backdrop-filter: blur(10px); z-index: 100; background-color: rgba(0, 0, 0, 0.7);"
+      >
+        <nav
+          class="mx-auto max-w-5xl flex items-center justify-between p-4 lg:px-8"
+          aria-label="Global"
+        >
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5 flex items-center gap-4">
+              <img
+                class="h-12 sm:h-[50px] w-auto"
+                src={logo.src}
+                alt=""
+                fetchpriority="high"
+              />
+              <span class="text-3xl sm:text-[35px]">Hyperstable</span>
+            </a>
+          </div>
+          <div class="flex sm:hidden">
+            <button
+              id="mobile-nav-toggle"
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
             >
-                <nav
-                    class="mx-auto max-w-5xl flex items-center justify-between p-4 lg:px-8"
-                    aria-label="Global"
-                >
-                    <div class="flex lg:flex-1">
-                        <a
-                            href="#"
-                            class="-m-1.5 p-1.5 flex items-center gap-4"
-                        >
-                            <img
-                                class="h-12 sm:h-[50px] w-auto"
-                                src={logo.src}
-                                alt=""
-                                fetchpriority="high"
-                            />
-                            <span class="text-3xl sm:text-[35px]"
-                                >Hyperstable</span
-                            >
-                        </a>
-                    </div>
-                    <div class="flex sm:hidden">
-                        <button
-                            id="mobile-nav-toggle"
-                            type="button"
-                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
-                        >
-                            <span class="sr-only">Open main menu</span>
-                            <svg
-                                class="size-8 sm:size-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                                data-slot="icon"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                                ></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="hidden sm:flex sm:gap-x-10 items-center">
-                        {
-                            navItems.map((item) => (
-                                <a
-                                    href={item.href}
-                                    class="text-lg inline-block"
-                                >
-                                    {item.name}
-                                </a>
-                            ))
-                        }
-                        <div class="flex items-center gap-4">
-                            <Socials />
-                        </div>
-                        <button
-                            type="button"
-                            class="bg-hs-blue-primary font-semibold rounded px-4 py-2 hover:bg-hs-blue-secondary"
-                            >Open App</button
-                        >
-                    </div>
-                </nav>
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="size-8 sm:size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden sm:flex sm:gap-x-10 items-center">
+            {
+              navItems.map((item) => (
+                <a href={item.href} class="text-lg inline-block">
+                  {item.name}
+                </a>
+              ))
+            }
+            <div class="flex items-center gap-4">
+              <Socials />
             </div>
-            <!-- Mobile menu, show/hide based on menu open state. -->
-            <div id="mobile-nav" class="hidden" role="dialog" aria-modal="true">
-                <!-- Background backdrop, show/hide based on slide-over state. -->
-                <div class="fixed inset-0 z-10"></div>
-                <div
-                    class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-                >
-                    <div class="flex items-center justify-between">
-                        <a href="#" class="-m-1.5 p-1.5">
-                            <span class="sr-only">Your Company</span>
-                            <img
-                                class="h-8 w-auto"
-                                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                                alt=""
-                            />
-                        </a>
-                        <button type="button" class="-m-2.5 rounded-md p-2.5">
-                            <span class="sr-only">Close menu</span>
-                            <svg
-                                class="size-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                                data-slot="icon"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M6 18 18 6M6 6l12 12"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="mt-6 flow-root">
-                        <div class="-my-6 divide-y divide-gray-500/10">
-                            <div class="space-y-2 py-6 text-center">
-                                {
-                                    navItems.map((item) => (
-                                        <a
-                                            href={item.href}
-                                            class="mobile-nav-item -mx-3 block rounded-lg px-3 py-2 text-white font-semibold hover:bg-gray-100 hover:text-black"
-                                        >
-                                            {item.name}
-                                        </a>
-                                    ))
-                                }
-                            </div>
-                        </div>
-
-                        <div
-                            class="mt-6 flex items-center gap-4 justify-center"
-                        >
-                            <Socials />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="pt-4 sm:pt-20 text-white" style="z-index: 30">
-            <slot />
-        </div>
-
-        <div class="flex flex-col text-center gap-4 pb-4">
-            <div class="flex items-center gap-4 justify-center">
-                <Socials />
-            </div>
-            <div
-                class="px-4 sm:px-0 flex items-center gap-2 justify-center flex-wrap"
+            <button
+              type="button"
+              class="bg-hs-blue-primary font-semibold rounded px-4 py-2 hover:bg-hs-blue-secondary"
+              >Open App</button
             >
-                <a href="#" class="text-white text-sm/6">Documentation</a>
-                <a href="#" class="text-white text-sm/6">Security</a>
-                <a href="#" class="text-white text-sm/6 whitespace-nowrap"
-                    >Brand Kit</a
-                >
-                <p class="text-white text-sm/6 whitespace-nowrap">
-                    Hyperstable {new Date().getFullYear()}
-                </p>
+          </div>
+        </nav>
+      </div>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div id="mobile-nav" class="hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-10"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                alt=""
+              />
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5">
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6 text-center">
+                {
+                  navItems.map((item) => (
+                    <a
+                      href={item.href}
+                      class="mobile-nav-item -mx-3 block rounded-lg px-3 py-2 text-white font-semibold hover:bg-gray-100 hover:text-black"
+                    >
+                      {item.name}
+                    </a>
+                  ))
+                }
+              </div>
             </div>
+
+            <div class="mt-6 flex items-center gap-4 justify-center">
+              <Socials />
+            </div>
+          </div>
         </div>
-    </body>
+      </div>
+    </header>
+
+    <div class="pt-4 sm:pt-20 text-white" style="z-index: 30">
+      <slot />
+    </div>
+
+    <div class="flex flex-col text-center gap-4 pb-4">
+      <div class="flex items-center gap-4 justify-center">
+        <Socials />
+      </div>
+      <div
+        class="px-4 sm:px-0 flex items-center gap-2 justify-center flex-wrap"
+      >
+        <p class="text-white text-sm/6 whitespace-nowrap">
+          Hyperstable {new Date().getFullYear()}
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
